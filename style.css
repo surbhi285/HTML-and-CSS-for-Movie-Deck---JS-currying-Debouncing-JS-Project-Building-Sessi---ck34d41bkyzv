@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(81, 2, 81);
+}
+.header{
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(43, 1, 43);
+    text-decoration: none; 
+    text-align: center; 
+}
+
+.search-bar{
+    padding: 1px;
+
+}
+#search-input{
+    height: 30px;
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#search-button,
+#sort-by-date,
+#sort-by-rating,
+#all-tab,
+#favorites-tab{
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+#search-button:hover,
+#sort-by-date:hover,
+#sort-by-rating:hover,
+#all-tab:hover,
+#favorites-tab:hover
+{
+    background-color: grey;
+}
+.search-bar,.sorting-options{
+margin-top: 10px;
+text-align: center;
+padding: 10px;
+
+}
+#sort-by-date,
+#sort-by-rating{
+    height: 30px;
+    border-radius: 2px;
+}
+
+.tab{
+    
+    padding: 15px 
+      
+}
+.all-tab, .favourites{
+text-align: center;
+justify-content: space-between;
+position: relative;
+}
+
+#movies-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+.fa-regular{
+    color:red;
+}
+.card{
+    width: 250px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+.poster{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+.pagination{
+    text-align: center;
+    padding: 10px;
+}
+.footer{
+    background-color: rgb(43, 1, 43);
+    color: white;
+    text-align: center;
+    padding: 2px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Deck</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class = "header">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+    <!---Search bar -->
+    <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Search your movie" >
+        <input type="button" value="Search"  name="button" id="search-button" />
+    </div>
+    <!--Sorting bar-->
+
+    <div class="sorting-options">
+        <button class="soring-button" id="sort-by-date">Sort By Date(Oldest to Latest)</button>
+        <button class="soring-button" id="sort-by-rating">Sort By Rating</button>
+    </div>
+
+<!--main section-->
+<div class="main">
+    <!--tab-->
+    <div class="tab">
+        <button id="all-tab" class="all-tab active-tab">All</button>
+        <button id="favorites-tab" class="favorites-tab">Favorites</button>
+    </div>
+
+    <!--main movies list-->
+    <div id ="movies-card-container">
+    </div>
+        <div class="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="current-page-button">Current Page: 1</button>
+            <button id="next-button">Next</button> 
+    </div>
+</div>
+<footer class="footer">
+    <p>Copyright © 2020 All Rights Reserved</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
